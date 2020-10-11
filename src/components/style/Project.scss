@@ -1,0 +1,28 @@
+
+
+// width
+.projectBodyContainer, .projectBodyContainer img{
+    width: 100%;
+    max-width: 900px;
+
+}
+.projectBodyContainer{
+    
+    margin: auto;
+
+    .projectSection{
+        
+        h1, img{
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        h2, h3, h4, h5{
+            padding-top: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+        p{
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.image-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-gap: 3rem;
+  grid-auto-rows: 10px;
+  padding: 3rem;
+}
+
+.image-list img {
+  width: 100%;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+}
+/*# sourceMappingURL=ImageList.css.map */

@@ -1,0 +1,24 @@
+.projectBodyContainer, .projectBodyContainer img {
+  width: 100%;
+  max-width: 900px;
+}
+
+.projectBodyContainer {
+  margin: auto;
+}
+
+.projectBodyContainer .projectSection h1, .projectBodyContainer .projectSection img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.projectBodyContainer .projectSection h2, .projectBodyContainer .projectSection h3, .projectBodyContainer .projectSection h4, .projectBodyContainer .projectSection h5 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.projectBodyContainer .projectSection p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/*# sourceMappingURL=Project.css.map */

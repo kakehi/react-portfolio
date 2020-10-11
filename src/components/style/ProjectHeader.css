@@ -1,0 +1,27 @@
+.projectHeader .bg-img {
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+  background: url(../../img/edge_thumb.png) no-repeat center center;
+  background-size: contain;
+  background-position: right;
+}
+
+.projectHeader .bg-img .head {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  left: 40px;
+  width: 50%;
+}
+
+.projectHeader .bg-img .head p {
+  font-size: 1.4rem;
+}
+
+.projectHeader, .projectHeader .bg-img {
+  width: 100%;
+  height: 760px;
+}
+/*# sourceMappingURL=ProjectHeader.css.map */
