@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "styleParams.scss"
+    ],
+    "names": [],
+    "file": "styleParams.css"
+}

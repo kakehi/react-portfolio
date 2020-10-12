@@ -9,6 +9,7 @@ class Project extends React.Component {
         super(props);
 
         this.state = { 
+            snippet: "",
             title: "",
             shortDescription: "",
             contents: []
@@ -29,6 +30,7 @@ class Project extends React.Component {
                 }else{
                     urlId = i+2;
                     this.setState({
+                        snippet: this.props.contents[i].gsx$snippet.$t,
                         title: this.props.contents[i].gsx$title.$t,
                         shortDescription: this.props.contents[i].gsx$shortdescription.$t
                     });
@@ -49,6 +51,7 @@ class Project extends React.Component {
         return (
             <div>
                 <ProjectMainBody 
+                    snippet={this.state.snippet}
                     contents={this.state.contents} 
                     title={this.state.title}
                     shortDescription={this.state.shortDescription}

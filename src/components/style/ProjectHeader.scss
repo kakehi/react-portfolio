@@ -1,19 +1,18 @@
 // Header
 
-
 .projectHeader {
-
+        
     .bg-img{
         max-width: 1600px;
         margin: auto;
         position: relative;
 
-        background: url(../../img/edge_thumb.png) no-repeat center center;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-        background-position: right;
+        background: url(../../img/edge_thumb.png) no-repeat;
+        -webkit-background-size: contain!important;
+        -moz-background-size: contain!important;
+        -o-background-size: contain!important;
+        background-size: contain!important;
+        background-position: right!important;
 
         .head{
             position: absolute;
@@ -26,6 +25,21 @@
                 font-size: 1.4rem;
             }
 
+            .categories{
+
+                padding-top: 1rem;
+
+                .category{
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+                    color: white;
+                    background-color: #aaa;
+
+                    margin-right: 0.5rem;
+                    display: inline;
+                }
+
+            }
         }
     }
     
@@ -33,4 +47,36 @@
 
 .projectHeader , .projectHeader .bg-img{
     width: 100%; height: 760px;
+}
+
+
+// Theme
+
+.projectHeader.quartz{
+
+    background-image:
+        radial-gradient(
+            circle at 10% 10%,
+            #4A1A59,
+            #2B3D71,
+            #192D65
+        );
+
+    .bg-img{
+
+        .head{
+            color: #fff;
+
+            .categories{
+                
+                .category{
+
+                    color: white;
+                    background-color: rgba(161, 170, 196, 0.2);
+
+                }
+
+            }
+        }
+    }
 }

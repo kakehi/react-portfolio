@@ -12,7 +12,7 @@ class ImageCard extends React.Component {
     }
 
     componentDidMount(){
-        this.imageRef.current.addEventListener('load', this.setSpan);
+        
     }
 
 
@@ -47,15 +47,13 @@ class ImageCard extends React.Component {
 
         const { id, title, description, urls } = this.props.content;
         const content = this.props.content;
-
-        //console.log(content);
+        const imageUrl = '.././img/' + content.gsx$thumb.$t;
 
         return (
-            <div onClick={this.onClick} className="image-card" key={ content.gsx$id.$t } to={ content.gsx$snippet.$t } style ={{ gridRowEnd: `span ${this.state.spans}`}}>
-                <img 
-                ref={ this.imageRef }
-                alt={ content.gsx$shortdescription.$t } 
-                src= { require('.././img/' + content.gsx$thumb.$t) } />
+            <div onClick={this.onClick} className="image-card" key={ content.gsx$id.$t } to={ content.gsx$snippet.$t } >
+                <div className="project-image">
+                    <div className="img" style={{ background: `url(${imageUrl}) no-repeat`}}/>
+                </div>
                 <div className="project-detail">
                     <h1> { content.gsx$title.$t } </h1>
                     <p className="project-description"> { content.gsx$shortdescription.$t } </p>

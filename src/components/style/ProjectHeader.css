@@ -2,9 +2,9 @@
   max-width: 1600px;
   margin: auto;
   position: relative;
-  background: url(../../img/edge_thumb.png) no-repeat center center;
-  background-size: contain;
-  background-position: right;
+  background: url(../../img/edge_thumb.png) no-repeat;
+  background-size: contain !important;
+  background-position: right !important;
 }
 
 .projectHeader .bg-img .head {
@@ -20,8 +20,34 @@
   font-size: 1.4rem;
 }
 
+.projectHeader .bg-img .head .categories {
+  padding-top: 1rem;
+}
+
+.projectHeader .bg-img .head .categories .category {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #aaa;
+  margin-right: 0.5rem;
+  display: inline;
+}
+
 .projectHeader, .projectHeader .bg-img {
   width: 100%;
   height: 760px;
+}
+
+.projectHeader.quartz {
+  background-image: radial-gradient(circle at 10% 10%, #4A1A59, #2B3D71, #192D65);
+}
+
+.projectHeader.quartz .bg-img .head {
+  color: #fff;
+}
+
+.projectHeader.quartz .bg-img .head .categories .category {
+  color: white;
+  background-color: rgba(161, 170, 196, 0.2);
 }
 /*# sourceMappingURL=ProjectHeader.css.map */

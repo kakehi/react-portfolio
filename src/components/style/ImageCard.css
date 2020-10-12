@@ -1,8 +1,40 @@
+.image-card {
+  cursor: pointer;
+}
+
 .image-card .project-detail {
   padding: 1rem 0;
 }
 
 .image-card .project-detail .project-description {
   padding-top: 0.5rem;
+}
+
+.image-card .project-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: width, height, left, top 2s;
+  transition: width, height, left, top 2s;
+}
+
+.image-card .project-image .img {
+  width: 105%;
+  height: 410px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../../img/quartz_thumb.jpg) no-repeat center;
+  background-size: cover !important;
+  -webkit-transition: width 1s, height 1s, left 1s, top 1s;
+  transition: width 1s, height 1s, left 1s, top 1s;
+}
+
+.image-card .project-image:hover .img {
+  width: 110%;
+  height: 430px;
+  left: -10px;
+  top: -5px;
 }
 /*# sourceMappingURL=ImageCard.css.map */

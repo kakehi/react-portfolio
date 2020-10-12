@@ -1,0 +1,24 @@
+
+@mixin transition-0-5s($args...) {
+    -webkit-transition: $args 0.5s;
+    -moz-transition: $args 0.5s;
+    -ms-transition: $args 0.5s;
+    -o-transition: $args 0.5s;
+    transition: $args 0.5s;
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin transition-2s($args...) {
+    -webkit-transition: $args 2s;
+    -moz-transition: $args 2s;
+    -ms-transition: $args 2s;
+    -o-transition: $args 2s;
+    transition: $args 2s;
+}

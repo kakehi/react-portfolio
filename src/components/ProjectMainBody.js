@@ -4,31 +4,30 @@ import ProjectSection from "./ProjectSection";
 
 const ProjectMainBody = (props) => {
 
+    // Create Sections
     let contents;
     let bodySections = [];
 
     if(props.contents.length > 0){
         contents = props.contents;
 
-        for(var i=3; i<contents.length; i++){
+        for(var i=2; i<contents.length; i++){
             bodySections.push(contents[i].gsx$content.$t);
         }
     }else{
         return(<div></div>);
     }
 
-    
-
     return (
         <div>
-            <ProjectHeader 
-                imageSrc={contents[1].gsx$content.$t} 
+            <ProjectHeader
+                snippet={props.snippet}
+                imageSrc={contents[0].gsx$content.$t} 
                 title={props.title}
                 shortDescription={props.shortDescription}
+                categories={contents[1].gsx$content.$t}
             />
-            <h2> {contents[0].gsx$content.$t && contents[0].gsx$content.$t} </h2>
-            <h3> {contents[2].gsx$content.$t} </h3>
-            <div className="projectBodyContainer">
+            <div className="projectBodyContainer v-margin-l">
                 {bodySections.map(bodySection => <ProjectSection content={bodySection} />)} 
             </div>
             
