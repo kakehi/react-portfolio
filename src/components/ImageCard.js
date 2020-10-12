@@ -47,15 +47,25 @@ class ImageCard extends React.Component {
 
         const { id, title, description, urls } = this.props.content;
         const content = this.props.content;
-        const imageUrl = '.././img/' + content.gsx$thumb.$t;
+        
+        // thumbnail
+        const thumbnails = content.gsx$thumb.$t.split(',').map(thumb => thumb.trim());;
+        const imageUrl = '.././img/' + thumbnails[0];
+        let overlayImageUrl;
+        if(thumbnails.length == 1){    
+            overlayImageUrl = '.././img/' + thumbnails[0];
+        }else{
+            overlayImageUrl = '.././img/' + thumbnails[1];
+        }
 
         return (
             <div onClick={this.onClick} className="image-card" key={ content.gsx$id.$t } to={ content.gsx$snippet.$t } >
                 <div className="project-image">
                     <div className="img" style={{ background: `url(${imageUrl}) no-repeat`}}/>
+                    <div className="img overlay" style={{ background: `url(${overlayImageUrl}) no-repeat`}}/>
                 </div>
                 <div className="project-detail">
-                    <h1> { content.gsx$title.$t } </h1>
+                    <h2> { content.gsx$title.$t } </h2>
                     <p className="project-description"> { content.gsx$shortdescription.$t } </p>
                 </div>
             </div>

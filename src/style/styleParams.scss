@@ -15,10 +15,9 @@
     transition: $args;
 }
 
-@mixin transition-2s($args...) {
-    -webkit-transition: $args 2s;
-    -moz-transition: $args 2s;
-    -ms-transition: $args 2s;
-    -o-transition: $args 2s;
-    transition: $args 2s;
+@mixin opacity($arg){
+    $IEValue: $arg*100;
+    opacity: $arg;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+    filter: alpha(opacity=$IEValue);
 }

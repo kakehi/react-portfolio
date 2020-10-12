@@ -1,4 +1,16 @@
+/* Remove Default Paddings & Margins */
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 /* Paddings & Margins */
+.margin-auto {
+  margin: auto;
+}
+
 /* S */
 .v-padding-top-s {
   padding-top: 0.5rem;
@@ -92,5 +104,18 @@
 
 .padding-xl {
   padding: 2rem;
+}
+
+/* Text Alignment */
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

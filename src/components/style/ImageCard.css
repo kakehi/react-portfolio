@@ -15,8 +15,8 @@
   height: 400px;
   overflow: hidden;
   position: relative;
-  -webkit-transition: width, height, left, top 2s;
-  transition: width, height, left, top 2s;
+  -webkit-transition: width 2s, height 2s, left 2s, top 2s;
+  transition: width 2s, height 2s, left 2s, top 2s;
 }
 
 .image-card .project-image .img {
@@ -27,14 +27,26 @@
   top: 0;
   background: url(../../img/quartz_thumb.jpg) no-repeat center;
   background-size: cover !important;
-  -webkit-transition: width 1s, height 1s, left 1s, top 1s;
-  transition: width 1s, height 1s, left 1s, top 1s;
+  -webkit-transition: width 1s, height 1s, left 1s, top 1s, opacity 0.5s;
+  transition: width 1s, height 1s, left 1s, top 1s, opacity 0.5s;
 }
 
-.image-card .project-image:hover .img {
+.image-card .project-image .img.overlay {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+.image-card:hover .project-image .img {
   width: 110%;
   height: 430px;
   left: -10px;
   top: -5px;
+}
+
+.image-card:hover .project-image .img.overlay {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
 }
 /*# sourceMappingURL=ImageCard.css.map */
