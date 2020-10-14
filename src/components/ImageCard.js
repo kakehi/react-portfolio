@@ -52,7 +52,7 @@ class ImageCard extends React.Component {
         const thumbnails = content.gsx$thumb.$t.split(',').map(thumb => thumb.trim());;
         const imageUrl = '.././img/' + thumbnails[0];
         let overlayImageUrl;
-        if(thumbnails.length == 1){    
+        if(thumbnails.length === 1){    
             overlayImageUrl = '.././img/' + thumbnails[0];
         }else{
             overlayImageUrl = '.././img/' + thumbnails[1];

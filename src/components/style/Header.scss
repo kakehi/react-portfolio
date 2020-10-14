@@ -1,0 +1,21 @@
+.header-nav{
+
+    position: absolute;
+    top: 0;
+    
+    padding: 2rem 1rem;
+
+    .header-nav-item{
+
+        display: inline-block;
+        margin: 1rem;
+
+        .link-item{
+            cursor: pointer;
+            text-decoration: none;
+            color: #05396B;
+        }
+    }
+
+
+}

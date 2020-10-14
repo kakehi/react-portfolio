@@ -120,3 +120,40 @@ ul{
 .align-right{
     text-align: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cta-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .cta{
+
+        margin: 0 auto!important;
+        display: inline-block;
+        cursor: pointer;
+
+        &.primary{
+            color: black;
+            border-radius: 1rem;
+            padding: 1rem 2rem;
+            border: black solid thin;
+
+        }
+    }
+}
+

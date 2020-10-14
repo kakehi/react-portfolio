@@ -38,6 +38,22 @@
   height: 760px;
 }
 
+.projectHeader.edge {
+  background-color: #000;
+  background: url("/svg/edge_background.svg") no-repeat #000;
+  background-size: cover;
+  background-position: center center;
+}
+
+.projectHeader.edge .bg-img .head {
+  color: #fff;
+}
+
+.projectHeader.edge .bg-img .head .categories .category {
+  color: white;
+  background-color: rgba(161, 170, 196, 0.2);
+}
+
 .projectHeader.quartz {
   background-image: radial-gradient(circle at 10% 10%, #4A1A59, #2B3D71, #192D65);
 }
@@ -49,5 +65,45 @@
 .projectHeader.quartz .bg-img .head .categories .category {
   color: white;
   background-color: rgba(161, 170, 196, 0.2);
+}
+
+.projectHeader.creative-coding {
+  background: #000;
+}
+
+.projectHeader.creative-coding .bg-img {
+  background-size: 100% !important;
+}
+
+.projectHeader.creative-coding .bg-img .head {
+  color: #fff;
+}
+
+.projectHeader.creative-coding .bg-img .head h1 {
+  display: inline;
+  color: #f7f6ec;
+  text-shadow: -3px 0px 3px yellow, 3px 0px 3px yellow, 6px 0px 6px yellow, -6px 0px 6px yellow;
+}
+
+.projectHeader.creative-coding .bg-img .head .categories .category {
+  color: white;
+  background-color: rgba(34, 34, 32, 0.8);
+}
+
+.projectHeader.shopest {
+  background: #ffc993;
+}
+
+.projectHeader.shopest .bg-img .head {
+  color: #4e2c0f;
+}
+
+.projectHeader.shopest .bg-img .head h1 {
+  display: inline;
+}
+
+.projectHeader.shopest .bg-img .head .categories .category {
+  color: white;
+  background-color: #f34908;
 }
 /*# sourceMappingURL=ProjectHeader.css.map */

@@ -20,7 +20,7 @@ class ProjectHeader extends React.Component {
                         <h1 className="title">{this.props.title}</h1>
                         <p className="v-margin-l">{this.props.shortDescription}</p>
                         <div className="categories">
-                            {categories.map(category => <div className="category">{category}</div>)} 
+                            {categories.map(category => <div className="category" key={category}>{category}</div>)} 
                         </div>
                     </div>
                 </div>

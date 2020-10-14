@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import ImageList from './ImageList';
+import './style/Projects.css'
 
-const Projects = () => {
+const Projects = (props) => {
+
     return (
-        <div className = "ui secondary pointing menu">
-            Projects
+        <div className="projects-container">
+            <ImageList contents={props.contents} featured=""/>
         </div>
     );
 

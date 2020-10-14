@@ -21,11 +21,11 @@ class Project extends React.Component {
 
         // map the url to id
         const urlParam = this.props.match.params.id;
-        let urlId;
+        let urlId, i;
         if(this.props.contents.length > 0){
-            let i=0;
+            i=0;
             while(i<this.props.contents.length){
-                if(this.props.contents[i].gsx$snippet.$t!= urlParam){
+                if(this.props.contents[i].gsx$snippet.$t !== urlParam){
                     i++;
                 }else{
                     urlId = i+2;
@@ -36,7 +36,12 @@ class Project extends React.Component {
                     });
                     i=this.props.contents.length;
                 }
-            }
+            }   
+        }
+
+        // Make sure not to call until the ID is ready
+        if(typeof urlId == 'undefined'){
+            return;
         }
 
         // call the appropriate URL

@@ -12,8 +12,12 @@ const ProjectMainBody = (props) => {
         contents = props.contents;
 
         for(var i=2; i<contents.length; i++){
-            bodySections.push(contents[i].gsx$content.$t);
+            bodySections.push({
+                id: i,
+                content: contents[i].gsx$content.$t
+            });
         }
+        
     }else{
         return(<div></div>);
     }
@@ -28,7 +32,7 @@ const ProjectMainBody = (props) => {
                 categories={contents[1].gsx$content.$t}
             />
             <div className="projectBodyContainer v-margin-l">
-                {bodySections.map(bodySection => <ProjectSection content={bodySection} />)} 
+                {bodySections.map(bodySection => <ProjectSection key={bodySection.id} content={bodySection.content} />)} 
             </div>
             
         </div>

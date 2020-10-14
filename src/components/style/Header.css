@@ -1,0 +1,17 @@
+.header-nav {
+  position: absolute;
+  top: 0;
+  padding: 2rem 1rem;
+}
+
+.header-nav .header-nav-item {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.header-nav .header-nav-item .link-item {
+  cursor: pointer;
+  text-decoration: none;
+  color: #05396B;
+}
+/*# sourceMappingURL=Header.css.map */

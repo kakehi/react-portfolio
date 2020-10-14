@@ -1,0 +1,18 @@
+.greeting-container {
+  padding: 18rem 4rem 12rem 4rem;
+  background-image: radial-gradient(circle at 30% 10%, #7de07a, #71caaf, #73e29e);
+  background-color: #5CDB94;
+  color: #05396B;
+}
+
+.greeting-container h1 {
+  color: #EDF5E0;
+  font-size: 6rem;
+}
+
+.greeting-container .my-title {
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #3D7867;
+}
+/*# sourceMappingURL=Greeting.css.map */

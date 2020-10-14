@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import spreadsheet from '../api/spreadsheet';
-import ImageList from './ImageList';
 import Header from './Header';
+import Home from './Home';
 import Process from './Process';
 import Projects from './Projects';
 import Project from './Project';
@@ -21,7 +21,7 @@ class App extends React.Component {
             params: { query: term }
         });
         
-        console.log(response.data.feed.entry);
+        //console.log(response.data.feed.entry);
         this.setState({contents: response.data.feed.entry});
 
     }
@@ -36,13 +36,13 @@ class App extends React.Component {
                     <div className = "ui container">
                         <Header />
                         <Route exact path = "/">
-                            <ImageList contents={this.state.contents}/>
+                            <Home contents={this.state.contents}/>
                         </Route>
                         <Route exact path = "/process">
                             <Process />
                         </Route>
                         <Route exact path = "/projects">
-                            <Projects />
+                            <Projects contents={this.state.contents}/>
                         </Route>
                         <Route exact path="/project/:id" component={(props) => 
                             <Project {...props} contents={this.state.contents}/>

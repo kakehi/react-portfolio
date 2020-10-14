@@ -118,4 +118,29 @@ ul {
 .align-right {
   text-align: right;
 }
+
+.cta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta-container .cta {
+  margin: 0 auto !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cta-container .cta.primary {
+  color: black;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  border: black solid thin;
+}
 /*# sourceMappingURL=style.css.map */
