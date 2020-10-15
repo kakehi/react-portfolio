@@ -1,4 +1,5 @@
 import React from 'react';
+import setup from '../setup.json';
 import './style/ImageCard.css';
 
 class ImageCard extends React.Component {
@@ -50,12 +51,12 @@ class ImageCard extends React.Component {
         
         // thumbnail
         const thumbnails = content.gsx$thumb.$t.split(',').map(thumb => thumb.trim());;
-        const imageUrl = '.././img/' + thumbnails[0];
+        const imageUrl = setup.imagePath + thumbnails[0];
         let overlayImageUrl;
         if(thumbnails.length === 1){    
-            overlayImageUrl = '.././img/' + thumbnails[0];
+            overlayImageUrl = setup.imagePath + thumbnails[0];
         }else{
-            overlayImageUrl = '.././img/' + thumbnails[1];
+            overlayImageUrl = setup.imagePath + thumbnails[1];
         }
 
         return (

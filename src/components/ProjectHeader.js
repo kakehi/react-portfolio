@@ -1,4 +1,5 @@
 import React from "react";
+import setup from '../setup.json';
 import './style/ProjectHeader.css';
 
 class ProjectHeader extends React.Component {
@@ -10,7 +11,7 @@ class ProjectHeader extends React.Component {
 
     render(){
 
-        const imageUrl = '.././img/' + this.props.imageSrc;
+        const imageUrl = setup.imagePath + this.props.imageSrc;
         const categories = this.props.categories.split(',');
 
         return (
