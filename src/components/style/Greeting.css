@@ -1,18 +1,46 @@
 .greeting-container {
-  padding: 18rem 4rem 12rem 4rem;
   background-image: radial-gradient(circle at 30% 10%, #7de07a, #71caaf, #73e29e);
   background-color: #5CDB94;
   color: #05396B;
+  position: relative;
 }
 
-.greeting-container h1 {
+.greeting-container .main-text {
+  padding: 14rem 4rem 18rem 4rem;
+}
+
+.greeting-container .main-text h1 {
   color: #EDF5E0;
   font-size: 6rem;
 }
 
-.greeting-container .my-title {
+.greeting-container .main-text .my-title {
   font-size: 1.6rem;
   font-weight: 100;
   color: #3D7867;
+}
+
+.greeting-container .media-container {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.greeting-container .media-container .media {
+  padding: 0.5rem 0rem;
+  display: inline-block;
+  width: 6rem;
+  text-decoration: none;
+}
+
+.greeting-container .media-container .media div {
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 0.8rem;
+}
+
+.greeting-container .media-container .media:hover div {
+  opacity: 0.6;
 }
 /*# sourceMappingURL=Greeting.css.map */

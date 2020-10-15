@@ -25,7 +25,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: url(../../img/quartz_thumb.jpg) no-repeat center;
   background-size: cover !important;
   -webkit-transition: width 1s, height 1s, left 1s, top 1s, opacity 0.5s;
   transition: width 1s, height 1s, left 1s, top 1s, opacity 0.5s;
