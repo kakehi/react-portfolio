@@ -1,18 +1,48 @@
 .image-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   grid-gap: 3rem;
   grid-auto-rows: 10px;
   padding: 3rem;
+  max-width: 2400px;
+  margin: auto;
 }
 
 .image-list img {
   width: 100%;
   -ms-grid-row-span: 2;
       grid-row-end: span 2;
+}
+
+@media (min-width: 720px) {
+  .image-list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .image-list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1700px) {
+  .image-list {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 2200px) {
+  .image-list {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
 }
 /*# sourceMappingURL=ImageList.css.map */
