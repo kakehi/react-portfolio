@@ -2,7 +2,7 @@
 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-gap: 3rem;
     grid-auto-rows: 10px;
 
@@ -10,7 +10,7 @@
 
     max-width: 2400px;
     margin: auto;
-    
+
     img{
 
         width: 100%;
