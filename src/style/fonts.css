@@ -81,6 +81,10 @@ h5, .h5 {
   font-weight: 500;
 }
 
+.subtext.caption {
+  color: #999;
+}
+
 .subtext.p {
   line-height: 1.5rem;
 }

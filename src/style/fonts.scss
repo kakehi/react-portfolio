@@ -91,6 +91,10 @@ h5, .h5{
 .subtext{
     font-size: 0.9rem; line-height: 1rem;
     font-weight: 500;
+
+    &.caption{
+        color: #999;
+    }
 }
 
 .subtext.p{
