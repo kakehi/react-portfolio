@@ -1,0 +1,135 @@
+
+
+
+.process-section-container{
+
+    padding: 8rem 0;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    position: relative;
+    height: 42rem;
+
+    .process-text-block, .process-image-block{
+        position: absolute;
+        width: 50%;
+
+        
+    }
+
+    .process-text-block{
+
+        left: 0;
+        
+        .process-day{
+            color: rgb(217, 224, 228); 
+            font-size: 3rem;
+            font-family: 'Didot';
+            padding-bottom: 5rem;;
+        }
+        
+        .process-category{
+            color: black; 
+        }
+
+        h1.process-title{
+            font-size: 6rem;
+            line-height: 5.6rem;
+        }
+
+        .process-description, p{
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+        }
+
+        .process-title, .process-description, .process-skill, p{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .process-skill{
+            display: inline-block;
+            img{
+                width: 2rem;
+                max-height: 2rem; 
+                padding: 0 1rem 0 0;
+                text-align: center;
+            }
+        }   
+            
+       
+    }
+    
+    .process-image-block{
+        right: 0;
+        top: 25%;
+
+        img{
+            width: 80%;
+            margin: auto;
+
+            border-radius: 2rem;
+        }
+            
+    }
+
+}
+
+
+
+.process-section{
+
+    width: 100%;
+
+    // &.monday{
+
+    //     .process-day{
+    //         color: #19df86;
+    //     }
+    // }
+
+    // &.tuesday{
+
+    //     .process-day{
+    //         color: #b1065b;
+    //     }
+    // }
+
+    // &.wednesday{
+
+    //     .process-day{
+    //         color: #128e97;
+    //     }
+    // }
+
+    // &.thursday{
+
+    //     .process-day{
+    //         color: #c1e736;
+    //     }
+    // }
+
+    // &.friday{
+
+    //     .process-day{
+    //         color: #e2563a;
+    //     }
+    // }
+
+    // &.saturday{
+
+    //     .process-day{
+    //         color: #6fe7b5;
+    //     }
+    // }
+    
+    &.sunday{
+        background-color: khaki;
+
+        .process-day{
+            color: rgb(245, 175, 96);
+        }
+    }
+}

@@ -1,3 +1,5 @@
+@import "styleParams";
+
 
 /* Remove Default Paddings & Margins */
 
@@ -127,6 +129,11 @@ ul{
 
 
 
+/* Shadows */
+
+.img-shadow{
+    @include boxshadow-default();
+}
 
 
 
@@ -154,6 +161,30 @@ ul{
             padding: 1rem 2rem;
 
         }
+
+        &.cta-icon{
+
+            margin: auto;
+            text-align: center;
+            width: 100%;
+    
+            .icon{
+                
+                margin: auto;
+
+                img{
+                    width: 6rem;
+                }
+            }
+    
+            .text{
+                padding-top: 1rem;
+            }
+
+        }
     }
+
+
+    
 }
 

@@ -7,7 +7,7 @@
   margin: auto;
 }
 
-.projectBodyContainer .projectSection h1, .projectBodyContainer .projectSection img, .projectBodyContainer .projectSection video {
+.projectBodyContainer .projectSection h1, .projectBodyContainer .projectSection img, .projectBodyContainer .projectSection .video {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -17,9 +17,13 @@
   padding-bottom: 0.5rem;
 }
 
-.projectBodyContainer .projectSection p, .projectBodyContainer .projectSection .caption {
+.projectBodyContainer .projectSection p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.projectBodyContainer .projectSection .caption {
+  padding-top: 0.5rem;
 }
 
 .projectBodyContainer .projectSection img {
@@ -32,6 +36,11 @@
 
 .projectBodyContainer .projectSection .gif img {
   max-width: 600px;
+}
+
+.projectBodyContainer .projectSection .gif.full-width img {
+  width: 100%;
+  max-width: none !important;
 }
 
 .projectBodyContainer .projectSection video {

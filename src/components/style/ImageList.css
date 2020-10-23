@@ -23,12 +23,24 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .in-projects {
+    display: none !important;
+  }
+  .below-projects {
+    display: inline-block !important;
+  }
 }
 
 @media (min-width: 1200px) {
   .image-list {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  .in-projects {
+    display: inline-block !important;
+  }
+  .below-projects {
+    display: none !important;
   }
 }
 
@@ -37,12 +49,24 @@
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
+  .in-projects {
+    display: none !important;
+  }
+  .below-projects {
+    display: inline-block !important;
+  }
 }
 
 @media (min-width: 2200px) {
   .image-list {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
+  }
+  .in-projects {
+    display: inline-block !important;
+  }
+  .below-projects {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=ImageList.css.map */

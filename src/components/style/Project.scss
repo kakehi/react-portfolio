@@ -10,7 +10,7 @@
 
     .projectSection{
         
-        h1, img, video{
+        h1, img, .video{
             padding-top: 1.5rem;
             padding-bottom: 1.5rem;
         }
@@ -18,9 +18,12 @@
             padding-top: 1.5rem;
             padding-bottom: 0.5rem;
         }
-        p, .caption{
+        p{
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
+        }
+        .caption{
+            padding-top: 0.5rem;
         }
 
         img{
@@ -32,6 +35,10 @@
 
             img{
                 max-width: 600px;
+            }
+            &.full-width img{
+                width: 100%;
+                max-width: none!important;
             }
             
         }

@@ -119,6 +119,12 @@ ul {
   text-align: right;
 }
 
+/* Shadows */
+.img-shadow {
+  -webkit-box-shadow: 0.2rem 0.2rem 1.8rem 1.8rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0.2rem 0.2rem 1.8rem 1.8rem rgba(0, 0, 0, 0.05);
+}
+
 .cta-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,5 +148,23 @@ ul {
   background-color: #73e29e;
   border-radius: 1rem;
   padding: 1rem 2rem;
+}
+
+.cta-container .cta.cta-icon {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.cta-container .cta.cta-icon .icon {
+  margin: auto;
+}
+
+.cta-container .cta.cta-icon .icon img {
+  width: 6rem;
+}
+
+.cta-container .cta.cta-icon .text {
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

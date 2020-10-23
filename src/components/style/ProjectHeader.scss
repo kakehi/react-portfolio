@@ -52,6 +52,9 @@
 
 // Theme
 
+.header-nav.edge .header-nav-item .link-item{
+    color: white;
+}
 .projectHeader.edge{
     
     background-color: #000;
@@ -83,6 +86,9 @@
 }
 
 
+.header-nav.quartz .header-nav-item .link-item{
+    color: white;
+}
 .projectHeader.quartz{
 
     background-image:
@@ -113,15 +119,16 @@
 }
 
 
+.header-nav.creative-coding .header-nav-item .link-item{
+    color: yellow;
+}
 .projectHeader.creative-coding{
 
     background:#000;
 
     .bg-img{
 
-        background-size: 100% !important;
-
-        
+        background-size: 100% !important;   
 
         .head{
 
@@ -152,6 +159,10 @@
     }
 }
 
+
+.header-nav.gabriel-riva .header-nav-item .link-item{
+    color: rgb(78, 44, 15);
+}
 .projectHeader.shopest{
 
     background:#ffc993;
@@ -173,6 +184,71 @@
 
                     color: white;
                     background-color: rgba(243, 73, 8, 1);
+
+                }
+
+            }
+        }
+    }
+}
+
+
+.projectHeader.tokyo-sky-tree-elevator-video{
+
+    background:#fff;
+
+    .bg-img{
+
+        .head{
+
+            h1{
+                display: inline;
+
+                color: rgb(0,0,0);
+            }
+
+            color: #fff;
+
+            .categories{
+                
+                .category{
+
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.2);
+
+                }
+
+            }
+        }
+    }
+}
+
+
+.header-nav.gabriel-riva .header-nav-item .link-item{
+    color: white;
+}
+.projectHeader.gabriel-riva{
+
+    background:#000;
+
+    .bg-img{
+
+        .head{
+
+            h1{
+                display: inline;
+
+                color: rgb(255, 255, 255);
+            }
+
+            color: #fff;
+
+            .categories{
+                
+                .category{
+
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.2);
 
                 }
 

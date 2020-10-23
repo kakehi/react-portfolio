@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageCard from './ImageCard';
+import ButtonIcon from './ButtonIcon';
 import './style/ImageList.css';
 
 const ImageList = (props) => {
@@ -11,14 +12,25 @@ const ImageList = (props) => {
             if(content.gsx$featured.$t !== ""){
                 return <ImageCard key={ content.gsx$id.$t } content={content}/>;
             }else{
-                return;
+                return [];
             }
             
         }
         return <ImageCard key={ content.gsx$id.$t } content={content}/>
     });
 
-    return <div className = "image-list" >{contents}</div>;
+
+    let nextCta = <div></div>;
+    if(props.featured === "featured"){
+        nextCta = <ButtonIcon href="/projects" type="cta-icon in-projects" className="center" text="View All Projects"/>;
+    }
+
+    return (
+        <div className = "image-list" >
+            {contents}
+            {nextCta}
+        </div>
+    );
 
 }
 

@@ -14,8 +14,22 @@
         .link-item{
             cursor: pointer;
             text-decoration: none;
-            color: #3D7867;
+            color: #000;
         }
     }
 
+}
+
+
+.header-nav{
+    &.home{
+        .header-nav-item .link-item{
+            color: #3D7867;
+        }
+    }
+    &.projects, &.process{
+        .header-nav-item .link-item{
+            color: #000;
+        }
+    }
 }

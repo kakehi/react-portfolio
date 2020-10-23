@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,eAAe,CAAA;EACX,cAAc,EAAE,KAAK;CACxB",
-    "sources": [
-        "home-container.scss"
-    ],
-    "names": [],
-    "file": "home-container.css"
-}

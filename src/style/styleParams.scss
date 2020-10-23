@@ -21,3 +21,16 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
     filter: alpha(opacity=$IEValue);
 }
+
+
+
+
+
+
+
+
+@mixin boxshadow-default(){
+    -webkit-box-shadow:  0.2rem 0.2rem 1.8rem 1.8rem rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:     0.2rem 0.2rem 1.8rem 1.8rem rgba(0, 0, 0, 0.05);
+    box-shadow :         0.2rem 0.2rem 1.8rem 1.8rem rgba(0, 0, 0, 0.05);
+}

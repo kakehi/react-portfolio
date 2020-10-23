@@ -12,7 +12,7 @@ const Greeting = () => {
             <div className="media-container">
                 <a className="media email" href="mailto:takuma.kakehi@gmail.com">
                     <div>
-                        <img width="48" src="/.././svg/email.svg" />
+                        <img width="48" src="/.././svg/email_outline.svg" />
                     </div>
                     <div>
                         Contact me
@@ -20,7 +20,7 @@ const Greeting = () => {
                 </a>
                 <a className="media dribbble" href="https://dribbble.com/tkakehi" target="_blank">
                     <div>
-                        <img width="48" src="/.././svg/dribbble.svg" />
+                        <img width="48" src="/.././svg/dribbble_outline.svg" />
                     </div>
                     <div>
                         Dribbble
@@ -28,7 +28,7 @@ const Greeting = () => {
                 </a>
                 <a className="media medium" href="https://medium.com/@takuma.kakehi" target="_blank">
                     <div>
-                        <img width="48" src="/.././svg/medium.svg" />
+                        <img width="48" src="/.././svg/medium_outline.svg" />
                     </div>
                     <div>
                         Medium

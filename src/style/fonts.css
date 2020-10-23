@@ -22,6 +22,26 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Didot';
+  src: url("../fonts/didot.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url("../fonts/didot-italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url("../fonts/didot-bold.ttf");
+  font-weight: normal;
+  font-style: bold;
+}
+
 html {
   font-family: 'Gilroy';
   font-size: 16px;

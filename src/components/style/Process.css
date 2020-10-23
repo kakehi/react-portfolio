@@ -1,0 +1,77 @@
+.process-section-container {
+  padding: 8rem 0;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+  height: 42rem;
+}
+
+.process-section-container .process-text-block, .process-section-container .process-image-block {
+  position: absolute;
+  width: 50%;
+}
+
+.process-section-container .process-text-block {
+  left: 0;
+}
+
+.process-section-container .process-text-block .process-day {
+  color: #d9e0e4;
+  font-size: 3rem;
+  font-family: 'Didot';
+  padding-bottom: 5rem;
+}
+
+.process-section-container .process-text-block .process-category {
+  color: black;
+}
+
+.process-section-container .process-text-block h1.process-title {
+  font-size: 6rem;
+  line-height: 5.6rem;
+}
+
+.process-section-container .process-text-block .process-description, .process-section-container .process-text-block p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.process-section-container .process-text-block .process-title, .process-section-container .process-text-block .process-description, .process-section-container .process-text-block .process-skill, .process-section-container .process-text-block p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.process-section-container .process-text-block .process-skill {
+  display: inline-block;
+}
+
+.process-section-container .process-text-block .process-skill img {
+  width: 2rem;
+  max-height: 2rem;
+  padding: 0 1rem 0 0;
+  text-align: center;
+}
+
+.process-section-container .process-image-block {
+  right: 0;
+  top: 25%;
+}
+
+.process-section-container .process-image-block img {
+  width: 80%;
+  margin: auto;
+  border-radius: 2rem;
+}
+
+.process-section {
+  width: 100%;
+}
+
+.process-section.sunday {
+  background-color: khaki;
+}
+
+.process-section.sunday .process-day {
+  color: #f5af60;
+}
+/*# sourceMappingURL=Process.css.map */

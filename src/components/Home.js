@@ -1,9 +1,12 @@
 import React from 'react';
+
 import Greeting from './Greeting';
 import SectionHeader from './SectionHeader';
-import Button from './Button';
+import ButtonIcon from './ButtonIcon';
 import ImageList from './ImageList';
-import './style/home-container.css'
+import ProcessOverview from './ProcessOverview';
+
+import './style/Home.css'
 
 const Home = (props) => {
 
@@ -13,7 +16,9 @@ const Home = (props) => {
             <Greeting />
             <SectionHeader text = "Featured Projects"/>
             <ImageList contents={props.contents} featured="featured"/>
-            <Button href="/projects" type="primary" text="View All Projects"/>
+            <ButtonIcon href="/projects" type="cta-icon below-projects" text="View All Projects"/>
+            <SectionHeader text = "Process Overview"/>
+            <ProcessOverview />
         </div>
     );
 

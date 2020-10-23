@@ -6,13 +6,11 @@
     font-weight: black;
 }
 
-
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Bold.otf');
     font-weight: bold;
 }
-
 
 @font-face {
     font-family: 'Gilroy';
@@ -20,11 +18,32 @@
     font-weight: 500;
 }
 
-
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Regular.otf');
     font-weight: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Didot';
+    src: url('../fonts/didot.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('../fonts/didot-italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('../fonts/didot-bold.ttf');
+    font-weight: normal;
+    font-style: bold;
 }
 
 
