@@ -4,7 +4,7 @@ import Greeting from './Greeting';
 import SectionHeader from './SectionHeader';
 import ButtonIcon from './ButtonIcon';
 import ImageList from './ImageList';
-import ProcessOverview from './ProcessOverview';
+import Process from './Process';
 
 import './style/Home.css'
 
@@ -18,7 +18,7 @@ const Home = (props) => {
             <ImageList contents={props.contents} featured="featured"/>
             <ButtonIcon href="/projects" type="cta-icon below-projects" text="View All Projects"/>
             <SectionHeader text = "Process Overview"/>
-            <ProcessOverview />
+            <Process page="home"/>
         </div>
     );
 

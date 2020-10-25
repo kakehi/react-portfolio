@@ -39,7 +39,7 @@ class App extends React.Component {
                             <Home contents={this.state.contents}/>
                         </Route>
                         <Route exact path = "/process">
-                            <Process />
+                            <Process page="process"/>
                         </Route>
                         <Route exact path = "/projects">
                             <Projects contents={this.state.contents}/>

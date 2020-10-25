@@ -28,7 +28,6 @@ class ImageCard extends React.Component {
     onClick = (event) => {
         
         const url='/project/' + this.props.content.gsx$snippet.$t;
-        const id = this.props.content.gsx$id.$t;
 
         // if users used right mouse button for options, return here (normal <a> action)
         if (event.metakey || event.ctrlKey){
@@ -46,7 +45,6 @@ class ImageCard extends React.Component {
 
     render(){
 
-        const { id, title, description, urls } = this.props.content;
         const content = this.props.content;
         
         // thumbnail
