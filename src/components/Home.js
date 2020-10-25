@@ -10,7 +10,6 @@ import './style/Home.css'
 
 const Home = (props) => {
 
-
     return (
         <div className="home-container">
             <Greeting />

@@ -1,9 +1,9 @@
 .process-section-container {
-  padding: 8rem 2rem;
+  padding: 12rem 2rem;
   max-width: 1400px;
   margin: auto;
   position: relative;
-  height: 26rem;
+  min-height: 26rem;
 }
 
 .process-section-container .process-text-block, .process-section-container .process-image-block {
@@ -17,7 +17,7 @@
 
 .process-section-container .process-text-block h1.process-title {
   font-size: 4rem;
-  line-height: 3.6rem;
+  line-height: 4.2rem;
 }
 
 .process-section-container .process-text-block .process-day {

@@ -27,13 +27,19 @@ class ImageCard extends React.Component {
 
     onClick = (event) => {
         
-        const url='/project/' + this.props.content.gsx$snippet.$t;
+        let url='/project/' + this.props.content.gsx$snippet.$t;
 
         // if users used right mouse button for options, return here (normal <a> action)
         if (event.metakey || event.ctrlKey){
             return;
         }
         
+        // url params
+        const urlParams = new URLSearchParams(window.location.search).get('key');
+        if(urlParams !== null){
+            url = url.concat('?key=' + urlParams);
+        };
+
         // make sure it doesn't trigger the default action
         event.preventDefault();
         // make sure it updates URL to the href

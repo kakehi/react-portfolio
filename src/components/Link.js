@@ -9,6 +9,12 @@ const Link = ({ className, href, children }) => {
             return;
         }
 
+        // url params
+        const urlParams = new URLSearchParams(window.location.search).get('key');
+        if(urlParams !== null){
+            href = href.concat('?key=' + urlParams);
+        };
+
         // make sure it doesn't trigger the default action
         event.preventDefault();
         // make sure it updates URL to the href
