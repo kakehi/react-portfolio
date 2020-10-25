@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ProcessSection from './ProcessSection';
 import './style/Process.css'
 
@@ -31,7 +31,7 @@ const Process = () => {
                     ]}>
                 Interactive flash websites from the early 2000s were the reasons why I'm brought into this field from my previous field, architecture. Those attention to the details are the core and the joy. To convey how exciting it is to even place your cursor on a single button, I won't be holding back from spending time on making my prototypes feel real.
             </ProcessSection>
-            <ProcessSection type="brief" day="Thursday" category="Project Management" headline="Iterative Documentation" src=".././img/gabriel-riva-05.gif" 
+            <ProcessSection type="brief" day="Thursday" category="Project Management" headline="Iterative Documentation" src="https://miro.medium.com/max/3200/1*IDi1X6Ton2SKPmiI805g1Q@2x.png" 
                 skills={[
                     {icon: ".././svg/sketch.svg", name: "File organizations and libraries in Sketch"},
                     {icon: ".././svg/figma.svg", name: "Figma for dev ready assets and communications"}, 
@@ -41,7 +41,7 @@ const Process = () => {
                     ]}>
                 Before everything, I start with research. Knowing the great products out there or in the past has always helped me project the direction of products. Sometimes, finding materials to do the right research is hard, just like not knowing what to type to search something. To be able to handle that well in real projects, I've been trying to write a quick research on random topics regularly. 
             </ProcessSection>
-            <ProcessSection type="brief" day="Friday" category="Product Management" headline="Follow Up with Facts" src=".././img/gabriel-riva-05.gif" 
+            <ProcessSection type="brief" day="Friday" category="Product Management" headline="Follow Up with Facts" src="https://software-advice.imgix.net/wordpress/other_pages/BI/1-tableau-drag-and-drop-analysis.png" 
                 skills={[
                     {icon: ".././svg/google-analytics.svg", name: "Google Analytics"},  
                     {icon: ".././svg/tableau.svg", name: "Tableau for data analytics"}, 
@@ -60,7 +60,7 @@ const Process = () => {
                     ]}>
                 Before everything, I start with research. Knowing the great products out there or in the past has always helped me project the direction of products. Sometimes, finding materials to do the right research is hard, just like not knowing what to type to search something. To be able to handle that well in real projects, I've been trying to write a quick research on random topics regularly.
             </ProcessSection>
-            <ProcessSection type="brief" day="Sunday" category="Creative Coding" headline="Sometimes, Logic Is Not Everything" src=".././img/gabriel-riva-05.gif" 
+            <ProcessSection type="brief" day="Sunday" category="Creative Coding" headline="Sometimes, Logic Is Not Everything" src=".././img/creative-coding-1_ar.gif" 
                 skills={[
                     {icon: ".././img/assets/cinema-4d.png", name: "Cinema4D"}, 
                     {icon: ".././svg/unity-3d.svg", name: "Unity3D"},

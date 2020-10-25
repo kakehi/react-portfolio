@@ -3,61 +3,45 @@
 
 .process-section-container{
 
-    padding: 8rem 0;
+    padding: 8rem 2rem;
 
     max-width: 1400px;
 
     margin: auto;
 
     position: relative;
-    height: 42rem;
+    height: 26rem;
 
     .process-text-block, .process-image-block{
         position: absolute;
-        width: 50%;
+        width: 45%;
 
         
     }
 
     .process-text-block{
 
-        left: 0;
+        left: 2rem;
         
-        .process-day{
-            color: rgb(217, 224, 228); 
-            font-size: 3rem;
-            font-family: 'Didot';
-            padding-bottom: 5rem;;
-        }
-        
-        .process-category{
-            color: black; 
-        }
 
         h1.process-title{
-            font-size: 6rem;
-            line-height: 5.6rem;
+            font-size: 4rem;
+            line-height: 3.6rem;
+        }
+        
+        .process-day{
+            font-size: 3rem;
         }
 
         .process-description, p{
-            font-size: 1.2rem;
-            line-height: 1.8rem;
+            font-size: 1rem;
+            line-height: 1.6rem;
         }
 
         .process-title, .process-description, .process-skill, p{
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
-
-        .process-skill{
-            display: inline-block;
-            img{
-                width: 2rem;
-                max-height: 2rem; 
-                padding: 0 1rem 0 0;
-                text-align: center;
-            }
-        }   
             
        
     }
@@ -76,6 +60,58 @@
     }
 
 }
+
+
+.process-table-container{
+
+    margin: 4rem auto;
+    padding: 0 3rem;
+    width: 100%;
+    max-width: 1600px;
+
+    td{
+        padding: 0.5rem;
+    }
+    .process-day{
+        width: 20%;
+        font-size: 2rem;
+    }
+    .process-content{
+        width: 50%;
+        .process-category{
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        .process-headline{
+            font-size: 3rem;
+            line-height: 3.8rem;
+        }
+    }
+
+}
+
+
+
+.process-day{
+    color: rgb(217, 224, 228); 
+    font-family: 'Didot';
+    padding-bottom: 5rem;;
+}
+
+.process-category{
+    color: black; 
+}
+
+.process-skill{
+    display: inline-block;
+    img{
+        width: 2rem;
+        max-height: 2rem; 
+        padding: 0 1rem 0 0;
+        text-align: center;
+    }
+}   
+
 
 
 

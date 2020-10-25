@@ -20,7 +20,7 @@ const ProcessSection = (props) => {
                     </div>
                 </div>
                 <div className="process-image-block">
-                    <img src={props.src} />
+                    <img alt={props.category} src={props.src} />
                 </div>
             </div>
  

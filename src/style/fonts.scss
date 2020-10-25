@@ -1,4 +1,4 @@
-
+@import "responsive";
 
 @font-face {
     font-family: 'Gilroy';
@@ -50,10 +50,12 @@
 html{
     font-family: 'Gilroy';
 
-    font-size: 16px;
-    //@include resp(desktop-m) { font-size: 16px; }
-    //@include resp(desktop-l) { font-size: 17px; }
-    //@include resp(desktop-xl) { font-size: 18px; }
+    font-size: 14px;
+    @include resp(desktop-s) { font-size: 10px; }
+    @include resp(desktop-m) { font-size: 12px; }
+    @include resp(desktop-xm) { font-size: 14px; }
+    @include resp(desktop-l) { font-size: 16px; }
+    @include resp(desktop-xl) { font-size: 18px; }
 }
 
 

@@ -12,23 +12,23 @@ const Greeting = () => {
             <div className="media-container">
                 <a className="media email" href="mailto:takuma.kakehi@gmail.com">
                     <div>
-                        <img width="48" src="/.././svg/email_outline.svg" />
+                        <img alt="email" title="contact me via. email" width="48" src="/.././svg/email_outline.svg" />
                     </div>
                     <div>
                         Contact me
                     </div>
                 </a>
-                <a className="media dribbble" href="https://dribbble.com/tkakehi" target="_blank">
+                <a className="media dribbble" href="https://dribbble.com/tkakehi" target="_blank" rel="noopener noreferrer">
                     <div>
-                        <img width="48" src="/.././svg/dribbble_outline.svg" />
+                        <img alt="dribbble" title="dribbble" width="48" src="/.././svg/dribbble_outline.svg" />
                     </div>
                     <div>
                         Dribbble
                     </div>
                 </a>
-                <a className="media medium" href="https://medium.com/@takuma.kakehi" target="_blank">
+                <a className="media medium" href="https://medium.com/@takuma.kakehi" target="_blank" rel="noopener noreferrer">
                     <div>
-                        <img width="48" src="/.././svg/medium_outline.svg" />
+                        <img alt="medium" title="medium" width="48" src="/.././svg/medium_outline.svg" />
                     </div>
                     <div>
                         Medium

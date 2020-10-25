@@ -1,0 +1,24 @@
+
+@mixin resp($media){
+
+    @if $media == desktop-s {
+        /* Desktop S */
+        @media only screen and (max-width: 767px) { @content; }
+    }
+    @if $media == desktop-m {
+        @media only screen and (min-width: 768px) { @content; }
+    }
+    @if $media == desktop-xm {
+        @media only screen and (min-width: 900px) { @content; }
+    }
+    @if $media == desktop-l {
+        @media only screen and (min-width: 1200px) { @content; }
+    }
+    @if $media == desktop-xl {
+        @media only screen and (min-width: 1600px) { @content; }
+    }
+    @if $media == desktop-xxl {
+        @media only screen and (min-width: 1920px) { @content; }
+    }
+
+}

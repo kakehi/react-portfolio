@@ -28,7 +28,7 @@ class Project extends React.Component {
                 if(this.props.contents[i].gsx$snippet.$t !== urlParam){
                     i++;
                 }else{
-                    urlId = i+2;
+                    urlId = this.props.contents[i].gsx$id.$t;
                     this.setState({
                         snippet: this.props.contents[i].gsx$snippet.$t,
                         title: this.props.contents[i].gsx$title.$t,
@@ -53,6 +53,7 @@ class Project extends React.Component {
     }
 
     render (){
+
         return (
             <div>
                 <ProjectMainBody 

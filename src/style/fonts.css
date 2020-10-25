@@ -44,7 +44,38 @@
 
 html {
   font-family: 'Gilroy';
-  font-size: 16px;
+  font-size: 14px;
+  /* Desktop S */
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 h1 {

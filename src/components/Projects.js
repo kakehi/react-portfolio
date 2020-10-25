@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ImageList from './ImageList';
 import './style/Projects.css'
 

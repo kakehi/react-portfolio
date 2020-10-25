@@ -1,55 +1,37 @@
 .process-section-container {
-  padding: 8rem 0;
+  padding: 8rem 2rem;
   max-width: 1400px;
   margin: auto;
   position: relative;
-  height: 42rem;
+  height: 26rem;
 }
 
 .process-section-container .process-text-block, .process-section-container .process-image-block {
   position: absolute;
-  width: 50%;
+  width: 45%;
 }
 
 .process-section-container .process-text-block {
-  left: 0;
-}
-
-.process-section-container .process-text-block .process-day {
-  color: #d9e0e4;
-  font-size: 3rem;
-  font-family: 'Didot';
-  padding-bottom: 5rem;
-}
-
-.process-section-container .process-text-block .process-category {
-  color: black;
+  left: 2rem;
 }
 
 .process-section-container .process-text-block h1.process-title {
-  font-size: 6rem;
-  line-height: 5.6rem;
+  font-size: 4rem;
+  line-height: 3.6rem;
+}
+
+.process-section-container .process-text-block .process-day {
+  font-size: 3rem;
 }
 
 .process-section-container .process-text-block .process-description, .process-section-container .process-text-block p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
 
 .process-section-container .process-text-block .process-title, .process-section-container .process-text-block .process-description, .process-section-container .process-text-block .process-skill, .process-section-container .process-text-block p {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.process-section-container .process-text-block .process-skill {
-  display: inline-block;
-}
-
-.process-section-container .process-text-block .process-skill img {
-  width: 2rem;
-  max-height: 2rem;
-  padding: 0 1rem 0 0;
-  text-align: center;
 }
 
 .process-section-container .process-image-block {
@@ -61,6 +43,57 @@
   width: 80%;
   margin: auto;
   border-radius: 2rem;
+}
+
+.process-table-container {
+  margin: 4rem auto;
+  padding: 0 3rem;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.process-table-container td {
+  padding: 0.5rem;
+}
+
+.process-table-container .process-day {
+  width: 20%;
+  font-size: 2rem;
+}
+
+.process-table-container .process-content {
+  width: 50%;
+}
+
+.process-table-container .process-content .process-category {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.process-table-container .process-content .process-headline {
+  font-size: 3rem;
+  line-height: 3.8rem;
+}
+
+.process-day {
+  color: #d9e0e4;
+  font-family: 'Didot';
+  padding-bottom: 5rem;
+}
+
+.process-category {
+  color: black;
+}
+
+.process-skill {
+  display: inline-block;
+}
+
+.process-skill img {
+  width: 2rem;
+  max-height: 2rem;
+  padding: 0 1rem 0 0;
+  text-align: center;
 }
 
 .process-section {

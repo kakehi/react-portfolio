@@ -1,19 +1,66 @@
 import React from 'react';
-import ProcessSection from './ProcessSection';
+
+import spreadsheet from '../api/spreadsheet';
+import ProcessTable from './ProcessTable';
+import ButtonIcon from './ButtonIcon';
+
 import './style/Process.css'
 
-const ProcessOverview = (props) => {
+class ProcessOverview extends React.Component {
 
-    return (
-        <div className="process-overview-container">
-            <ProcessSection type="brief" day="Monday" category="UX research" headline="Know the Great Ancestors" 
-                skills={[
-                    {icon: ".././svg/medium.svg", name: "Medium for researches"}, 
-                ]}>
-                Before everything, I start with research. Knowing the great products out there or in the past has always helped me project the direction of products. Sometimes, finding materials to do the right research is hard, just like not knowing what to type to search something. To be able to handle that well in real projects, I've been trying to write a quick research on random topics regularly.
-            </ProcessSection>
-        </div>
-    );
+    constructor(props){
+        super(props);
+
+        this.state = { 
+            contents: []
+        };
+
+    }
+
+    componentDidMount = async (term) => {
+
+
+        // call the appropriate URL
+        const response = await spreadsheet.get('2/public/full?alt=json', {
+            params: { query: term }
+        });
+        
+        this.setState({
+            contents: response.data.feed.entry
+        });
+
+    }
+
+    render (){
+        
+        const getSkillObject = (skillsString) => {
+            let skills = skillsString
+            .replace(/(\r\n|\n|\r)/gm, "")
+            .replace(/\s/g, '')
+            .split('¥');
+            for (let i=0; i< skills.length; i++){
+                skills[i] = (skills[i] !== "" ? JSON.parse(skills[i]) : ""); 
+            }
+            return skills;
+        }
+
+        if(this.state.contents.length > 0){
+            
+            const content = this.state.contents.map( content => {
+                return <ProcessTable key={content.gsx$day.$t} day={content.gsx$day.$t} category={content.gsx$category.$t} headline={content.gsx$headline.$t} skills={getSkillObject(content.gsx$skills.$t)}/>;
+            });
+
+            return (
+                <div className="process-overview-container">
+                    {content}
+                    <ButtonIcon href="/process" type="cta-icon" text="View Detail"/>
+                </div>
+            );
+        }else{
+            return <div></div>;
+        }
+
+    };
 
 }
 
